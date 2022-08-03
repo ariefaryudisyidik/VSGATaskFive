@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    tools:context=".ui.CalculatorActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/insert_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_first_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/insert_first_number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="Autofill,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/edt_second_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/insert_second_number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_first_number"
+        tools:ignore="Autofill,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btn_plus"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/plus"
+        app:layout_constraintStart_toStartOf="@+id/edt_second_number"
+        app:layout_constraintTop_toBottomOf="@+id/edt_second_number" />
+
+    <Button
+        android:id="@+id/btn_minus"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/minus"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_plus"
+        app:layout_constraintStart_toEndOf="@+id/btn_plus"
+        app:layout_constraintTop_toTopOf="@+id/btn_plus" />
+
+    <Button
+        android:id="@+id/btn_mutliply"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/multiply"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_minus"
+        app:layout_constraintEnd_toStartOf="@+id/btn_divide"
+        app:layout_constraintTop_toTopOf="@+id/btn_minus" />
+
+    <Button
+        android:id="@+id/btn_divide"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:text="@string/divide"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_mutliply"
+        app:layout_constraintEnd_toEndOf="@+id/edt_second_number"
+        app:layout_constraintTop_toTopOf="@+id/btn_mutliply" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:letterSpacing="0"
+        android:text="@string/clear"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btn_divide"
+        app:layout_constraintStart_toStartOf="@+id/btn_plus"
+        app:layout_constraintTop_toBottomOf="@+id/btn_minus" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/result"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_clear"
+        app:layout_constraintStart_toStartOf="@+id/btn_clear"
+        app:layout_constraintTop_toBottomOf="@+id/btn_clear" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

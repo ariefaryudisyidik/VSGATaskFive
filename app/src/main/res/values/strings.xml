@@ -1,0 +1,32 @@
+<resources>
+    <string name="mobile_app">Mobile App</string>
+    <string name="calculator_app">Calculator App</string>
+    <string name="listview_app">ListView App</string>
+    <string name="insert_your_name">Masukkan nama Anda</string>
+    <string name="name">Nama</string>
+    <string name="show">Tampilkan</string>
+    <string name="result">Hasil\n0</string>
+    <string name="insert_number">Masukkan Angka</string>
+    <string name="insert_first_number">Masukkan Angka Pertama</string>
+    <string name="insert_second_number">Masukkan Angka Kedua</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="multiply">x</string>
+    <string name="divide">/</string>
+    <string name="clear">Bersihkan</string>
+    <string name="result_value">Hasil\n%d</string>
+    <string-array name="country_list">
+        <item>Indonesia</item>
+        <item>Malaysia</item>
+        <item>Singapura</item>
+        <item>Vietnam</item>
+        <item>Laos</item>
+        <item>Thailand</item>
+        <item>Kamboja</item>
+        <item>Brunei</item>
+        <item>Myanmar</item>
+        <item>Burma</item>
+        <item>Filipina</item>
+        <item>Timor-Leste</item>
+    </string-array>
+</resources>
